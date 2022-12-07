@@ -27,21 +27,45 @@
         </header>
 
         <main>
-            <div class="col-sm-12">
-                <div class="topnav">
-                    <a href="index.html">Home</a>
-                    <a href="benefits.html">Benefits of Reading</a>
-                    <a href="genres.html">Genres</a>
-                    <a class="active" href="findabook.html">Find a Book</a>
-                    <a href="history.html">About</a>
-                    <div class="search-container">
-                        <form action="">
-                            <input type="text" placeholder="Search.." name="search">
-                            <button type="submit"><i class="fa fa-search"></i></button>
-                        </form>
-                    </div>
+            <nav class="navbar navbar-expand-md justify-content-start navbar-light col-12" style="background-color: lightpink;">
+                <!-- Responsive Button for the smaller menu -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <!-- Links to Pages-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="benefits.html">Benefits of Reading</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="genres.html">Genres</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="findabook.html">Find A Book</a>
+                        </li>
+                        <!-- Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                               data-toggle="dropdown"  role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                About
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="history.html">History</a>
+                                <a class="dropdown-item" href="contact.html">Contact</a>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-            </div>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </nav>
 
             <h1> Where to Borrow/Buy Books </h1>
               <ol>
@@ -108,6 +132,8 @@
             </div>
         </main>
     </body>
+
+    <br><br><br><br>
 
     <footer class="footer page-footer font-small ">
         <div class="container">

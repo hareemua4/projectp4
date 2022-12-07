@@ -29,7 +29,7 @@
             <p> “If you don’t like to read, you haven’t found the right book.”</p>
         </header>
 
-        <div class="col-sm-12">
+      <!--  <div class="col-sm-12">
             <div class="topnav">
                 <a class="active" href="index.html">Home</a>
                 <a href="benefits.html">Benefits of Reading</a>
@@ -43,14 +43,50 @@
                     </form>
                 </div>
             </div>
-        </div>
+        </div>-->
+        <nav class="navbar navbar-expand-md justify-content-start navbar-light col-12" style="background-color: lightpink;">
+            <!-- Responsive Button for the smaller menu -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <!-- Links to Pages-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="benefits.html">Benefits of Reading</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="genres.html">Genres</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="findabook.html">Find A Book</a>
+                    </li>
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                           data-toggle="dropdown"  role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            About
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="history.html">History</a>
+                            <a class="dropdown-item" href="contact.html">Contact</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </nav>
 
         <div class="col-sm-12">
                      <h1> Welcome! </h1>
-                </div>
-
-                <br>
-
+                </div><br>
 
         <div class="row">
              <div class="col-sm-6">
@@ -81,6 +117,7 @@
         </div><br>
     </body>
 
+    <br><br><br><br>
 
     <footer class="footer page-footer font-small">
         <div class="container">
